@@ -1,31 +1,54 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link'; // for hash links (internal page anchors)
-import { Link } from 'react-router-dom'; // for normal routing links
+import { Link, useLocation } from 'react-router-dom'; // for normal routing links
 import './Navbar.css';
 
 const NavLinks = () => {
+    const location = useLocation();
+
+    const isActive = (path) => location.pathname === path;
+
     return (
         <div className="navbar-links">
-            <Link className="nav-link" to="/work">
+            <Link
+                className={`nav-link ${isActive('/work') ? 'active' : ''}`}
+                to="/work"
+            >
                 WORK
             </Link>
-            <HashLink className="nav-link" smooth to="/Offerings">
+            <HashLink
+                className={`nav-link ${isActive('/Offerings') ? 'active' : ''}`}
+                smooth
+                to="/Offerings"
+            >
                 OFFERINGS
             </HashLink>
-            <HashLink className="nav-link" to="/impressions">
+            <HashLink
+                className={`nav-link ${isActive('/impressions') ? 'active' : ''}`}
+                to="/impressions"
+            >
                 IMPRESSION
             </HashLink>
-            <HashLink className="nav-link" to="/contact#contact">
+            <HashLink
+                className={`nav-link ${isActive('/contact#spotlight') ? 'active' : ''}`}
+                to="/contact#spotlight"
+            >
                 SPOTLIGHT
             </HashLink>
-            <HashLink className="nav-link" to="/contact#contact">
+            <HashLink
+                className={`nav-link ${isActive('/contact#culture') ? 'active' : ''}`}
+                to="/contact#culture"
+            >
                 CULTURE
             </HashLink>
-            <HashLink className="nav-link" to="/contact#contact">
+            <HashLink
+                className={`nav-link ${isActive('/contact#connect') ? 'active' : ''}`}
+                to="/contact#connect"
+            >
                 CONNECT
             </HashLink>
         </div>
     );
-}
+};
 
 export default NavLinks;

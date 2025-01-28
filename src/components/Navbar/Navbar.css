@@ -30,6 +30,20 @@
     color: #013289;
 }
 
+.nav-link {
+    color: #333; /* Default color */
+    font-weight: normal;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+.nav-link:hover {
+    color: #018923; /* Hover color */
+}
+.nav-link.active {
+    color: #013289; /* Active color */
+    font-weight: bold; /* Optional: make it bold */
+  
+}
+
 /* Adjust logo size for better visibility */
 .navbar-logo {
     margin-top: 2rem;

@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './Footer.module.css';
 import LogoWhite from '../../images/Logo.png';
 
-
+// isActive: true 
 const navItems = [
   { label: 'OFFERING', path: '/offerings' },
   { label: 'WORK', path: '/work' },
   { label: 'CULTURE', path: '/culture' },
-  { label: 'IMPRESSION', path: '/impression' },
-  { label: 'SPOTLIGHT', path: '/spotlight', isActive: true },
+  { label: 'IMPRESSION', path: '/impressions' },
+  { label: 'SPOTLIGHT', path: '/spotlight'},                              
   { label: 'CONNECT', path: '/connect' }
 ];
 
