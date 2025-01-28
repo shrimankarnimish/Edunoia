@@ -1,0 +1,91 @@
+/* Container for the 'about' section */
+.about-container {
+    background-color: #002855; /* Background color */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height dynamically */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    padding: 7rem; /* Space around the content */
+}
+
+/* Container for the heading */
+.intro-container {
+    text-align: center; /* Center-align text */
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+/* Styling for the heading */
+.intro-heading {
+    font-size: 2rem; /* Default font size */
+    line-height: 1.4; /* Line height for readability */
+    color: #ffffff; /* Default text color */
+    font-family: 'Lato', sans-serif; /* Apply Lato font */
+    margin: auto; /* Center the heading container */
+}
+
+/* Highlighted text (Edunoia is an advisory) */
+
+
+/* Normal text for other lines */
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .intro-heading {
+        font-size: 3rem; /* Larger font size for bigger screens */
+    }
+}
+
+/* Normal styling for the highlighted text */
+.highlight {
+    color: #ffffff; /* White color for highlighted words */
+    font-family: 'Open Sans', sans-serif; /* Open Sans font */
+    font-weight: 700; /* Bold */
+    font-size: 45px; /* Match the font size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for the highlighted text */
+.highlight:hover {
+    color: #ff7f09; /* Change color to #ff7f09 on hover */
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Adjust height as needed */
+    padding: 2rem;
+    margin: auto;
+    overflow: hidden; /* Ensures no overflow issues during animation */
+    animation: zoom-in 1s ease-in-out; /* Apply the zoom-in animation */
+}
+
+/* Keyframes for zoom-in animation */
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.springboard {
+    width: 10%; /* Set an explicit width */
+    height: 20px; /* Set an explicit height to match the ratio */
+    background-color: var(--blackcolor);
+    margin-block: 1.5rem;
+    padding-left: 14%;
+    margin-inline: auto;
+}
+  
+  :root {
+    --blackcolor: rgb(236, 229, 229);
+
+  }
+  

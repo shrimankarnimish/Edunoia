@@ -1,0 +1,130 @@
+/* Default styles for large screens (navbar remains horizontal) */
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.navbar-menu-items {
+    display: flex;
+    gap: 0.5rem; /* Space between the menu items */
+    background-color: #F5F5F5;
+    opacity: 70%;
+    padding: 0;
+    border-radius: 8px; /* Optional, to round the corners of the shadow box */
+    font-family: 'Lato', sans-serif; /* Apply Lato font here */
+}
+
+/* Styling for individual links in the navbar */
+.navbar-menu-items a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for navbar links */
+.navbar-menu-items a:hover {
+    color: #013289;
+}
+
+/* Adjust logo size for better visibility */
+.navbar-logo {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 10; /* Keep logo above the shadowed menu */
+}
+
+/* Navbar styles when not scrolled (default) */
+.navbar-default {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Scrolled navbar style (white background) */
+.navbar-scrolled {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Large screens: Flex display for navbar items */
+@media (min-width: 1024px) {
+    .navbar-menu-items {
+        display: flex; /* Display inline for large screens */
+        gap: 2rem;
+    }
+
+    /* Show navbar links directly for large screens */
+    .navbar-menu-items a {
+        font-size: 1rem;
+    }
+
+    /* Mobile menu is hidden on large screens */
+    .navbar-menu-items.open {
+        display: none;
+    }
+}
+
+/* ----------- MOBILE/STANDARD (Drawer) STYLES ------------- */
+
+/* When the screen is smaller (mobile/tablet) */
+@media (max-width: 1024px) {
+    .navbar-menu-items {
+        display: none; /* Hide navbar items initially */
+    }
+
+    /* Show the navbar items when the menu is toggled */
+    .navbar-menu-items.open {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 75vw; /* Drawer width */
+        background-color: white;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+        padding-top: 3rem;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the items */
+        justify-content: flex-start; /* Align items properly */
+        gap: 1.5rem; /* Add spacing between items */
+        z-index: 50;
+    }
+
+    /* Add space between the links in the mobile drawer */
+    .navbar-menu-items a {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: black;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* Remove border from the last item */
+    .navbar-menu-items a:last-child {
+        border-bottom: none;
+    }
+
+    /* Ensure the hamburger icon is visible and the button is styled */
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    button svg {
+        fill: #013289;
+        width: 30px; /* Larger hamburger icon for better visibility */
+        height: 30px;
+    }
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Add this CSS */
+/* html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+*/
+
+.content {
+  padding-bottom: 3rem;
+  /* Reduced padding to minimize scrolling */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height: 50px; */
+  position: static;
+  /* Remove absolute positioning for better alignment */
+  height: 3rem;
+  /* Adjust footer height */
+}
+
+.why-us-text2 {
+  white-space: nowrap;
+  /* Prevents text from wrapping */
+  overflow: hidden;
+  /* Hides any overflowing text */
+  text-overflow: ellipsis;
+  /* Adds '...' if text overflows */
+  display: inline-block;
+  /* Ensures it's treated as a single block */
+}
+
+.springboard-2 {
+  width: 89px;
+  height: 16px;
+  background-color: #ff7f09;
+  position: relative;
+  left: 4%;
+}
+
+.why-us-container .why-us-text1 {
+  font-size: 25px !important;
+  color: #111010 !important;
+  max-width: 63% !important;
+  text-align: left !important;
+  position: relative !important;
+  margin-top: -5% !important;
+  margin-right: 5% !important;
+  font-family: 'Lato', sans-serif;
+}
+
+h2.why-us-title2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 56px;
+  position: relative;
+  left: 3%;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.image-item {
+  width: 45%;
+  /* Adjust width to control the size of the images */
+  margin: 1rem;
+  text-align: left;
+}
+
+.image-item img {
+  width: 87%;
+  height: auto;
+  position: relative;
+  margin-left: 7%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-item h3 {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
+
+.image-item p {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  color: #666;
+  font-family: 'Lato', sans-serif;
+}
+
+.see-more-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.see-more-link {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #ff7f09;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.see-more-link:hover {
+  color: #e66b07;
+  text-decoration: underline;
+}
+
+/* Mobile First (Smaller to Larger Devices) */
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No additional styles for this breakpoint */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .image-item {
+    width: 80%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .image-item {
+    width: 70%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .image-item {
+    width: 45%;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .image-item img {
+    margin-left: 5%;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .image-gallery {
+    margin-top: 3rem;
+  }
+}
+
+/* Desktop First (Larger to Smaller Devices) */
+
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound */
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .image-gallery {
+    margin-top: 2rem;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .image-item img {
+    margin-left: 7%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .image-item {
+    width: 60%;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .image-item {
+    width: 90%;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .image-item {
+    width: 100%;
+  }
+}

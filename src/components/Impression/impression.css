@@ -1,0 +1,193 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 11%;
+  margin-bottom: 0; /* Removed extra bottom margin */
+}
+
+/* Impact Stats Styles */
+.impact-stats-container {
+  margin-bottom: 0 !important; /* Ensuring no bottom margin */
+}
+.springboard-offer{
+  width: 89px;
+    height: 16px;
+    background-color: #ff7f09;
+    position: relative;
+    left: -56%;
+    top: 109%
+
+}
+
+/* "What We Offer" Container Styles */
+.what-we-offer-container {
+  padding: 0; /* Removed padding */
+  margin-top: 0; /* Removed top margin */
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #003366;
+  line-height: 1.1;
+  position: sticky;
+  top: 2rem;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.award-item {
+  transition: transform 0.3s ease;
+}
+
+.award-item:hover {
+  transform: scale(1.05);
+}
+
+.award-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .title {
+    position: static;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .what-we-offer-container {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  /* Adjust card width and spacing for smaller screens */
+  .container {
+    flex-direction: column; /* Stack cards vertically */
+  }
+
+  .card {
+    width: 100%; /* Make cards full width */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+}
+
+/* Default styling */
+.container {
+  display: flex;
+  justify-content: space-between; /* Space cards evenly */
+}
+
+.card {
+  width: 30%; /* Set card width */
+  margin: 20px; /* Add margin for spacing */
+  border: 1px solid #ccc; /* Add border for visual separation */
+  padding: 10px; /* Add padding inside the card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.card img {
+  width: 100%; /* Make image fill the card width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+/* .title {
+  font-size: 4rem;
+  margin: 0;
+  display: inline-block; 
+}
+
+.title::after {
+  width: 89px;
+    height: 16px;
+    background-color: #ff7f09;
+    position: relative;
+    left: -56%;
+    top: 109%;
+    display: block;
+} */

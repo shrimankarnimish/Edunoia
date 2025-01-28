@@ -1,0 +1,77 @@
+
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Adjust height as needed */
+    padding: 2rem;
+    margin: auto;
+}
+
+.hero-heading {
+    font-size: 2rem; /* Default for smaller screens */
+    font-weight: bold;
+    color: #1d4ed8; /* Blue color for normal text */
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero-heading {
+        font-size: 3rem; /* Larger font for medium screens and above */
+    }
+}
+
+.highlight1 {
+    color: #ffffff; /* White color for highlighted words */
+    font-family: 'Open Sans', sans-serif; /* Open Sans font */
+    font-weight: 700; /* Bold */
+}
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Adjust height as needed */
+    padding: 2rem;
+    margin: auto;
+    overflow: hidden; /* Ensures no overflow issues during animation */
+    animation: zoom-in 1s ease-in-out; /* Apply the zoom-in animation */
+}
+
+/* Keyframes for zoom-in animation */
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hero-heading {
+    font-size: 2rem; /* Default for smaller screens */
+    font-weight: bold;
+    color: #1d4ed8; /* Blue color for normal text */
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero-heading {
+        font-size: 5rem; /* Larger font for medium screens and above */
+    }
+}
+
+.highlight {
+    color: #ffffff; /* White color for highlighted words */
+    font-family: 'Open Sans', sans-serif; /* Open Sans font */
+    font-weight: 1000; /* Bold */
+}
+
+.normal-text {
+    color: #ffffff; /* White color */
+    font-weight: normal; /* Normal weight */
+}
