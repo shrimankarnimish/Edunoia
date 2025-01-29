@@ -17,8 +17,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Work from './components/Work/page'
 import Offerings from './components/Offerings/page'
 import Impression from './components/Impression/page'
-import NavLinks from './components/Navbar/NavLinks';
-import Footer from './components/Footer/Footer';
+
 
 
 function App() {
