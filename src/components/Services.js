@@ -1,11 +1,4 @@
 import React from 'react';
-import flame from '../images/clients/flame.png'
-import LondonBuiss from '../images/clients/LondonBuiss.png'
-import artvillage from '../images/clients/artvillage.png'
-import emversity from '../images/clients/emversity.png'
-import oaktree from '../images/clients/oaktree.png'
-import Yashbirla from '../images/clients/Yashbirla.png'
-import isbr from '../images/clients/isbr.png'
 import clientlogos from '../images/assets/clientlogos.png'
 import './Services.css'
 
@@ -21,6 +14,7 @@ const Clients = () => {
         <section data-aos="fade-up">
       <img src ={clientlogos} alt='' ></img>
         </section>
+        <br></br><br></br><br></br><br></br>     
       </div>
       
     )

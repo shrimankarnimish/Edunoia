@@ -1,0 +1,110 @@
+.offeringsSection {
+    width: 100%;
+    max-width: 1660px;
+    margin: 139px auto 0;
+    padding: 0 20px;
+    
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading {
+    color: rgb(0, 40, 85);
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 58px;
+    margin: 0;
+    margin-left: 3%;
+  }
+  
+  .underline {
+    width: 89px;
+    height: 11px;
+    background-color: #ff7f09;
+    position: relative;
+    left:43px;
+    margin-block: 18px;
+    
+  }
+  
+  .content {
+    margin-left: 20px;
+    max-width: 75%;
+  }
+  
+  .description {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    margin:1px -364px;
+    margin-top: -12%;
+    margin-left: 56%;
+    max-width: 987px;
+    font-family: 'Lato',sans-serif;
+  }
+  
+  .knowMoreBtn {
+    color: rgb(255, 127, 9);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 23px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 43rem;
+  }
+  
+  .cardContainer {
+    display: flex;
+    gap: 146px;
+    margin-top: 98px;
+   
+  }
+  
+  .offeringCard {
+    background: rgb(245, 245, 245);
+    border-radius: 0 0 49px 0;
+    padding-bottom: 68px;
+  }
+  
+  .offeringImage {
+    width: 100%;
+    aspect-ratio: 1.23;
+    object-fit: contain;
+  }
+  
+  .offeringTitle {
+    color: rgb(255, 127, 9);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 50px 0 0 68px;
+  }
+  
+  @media (max-width: 991px) {
+    .offeringsSection {
+      margin-top: 40px;
+    }
+  
+    .heading {
+      font-size: 40px;
+      line-height: 39px;
+    }
+  
+    .content {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .cardContainer {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+  
+    .offeringTitle {
+      margin: 40px 0 0 10px;
+    }
+  }
