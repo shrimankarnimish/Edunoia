@@ -11,7 +11,6 @@ import {
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
-import NavBar from './components/Navbar/NavBar';
 import { useDocTitle } from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 import Work from './components/Work/page'
