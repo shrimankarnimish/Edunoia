@@ -1,95 +1,112 @@
 import React from 'react';
+import styles from './PortfolioSection.module.css'
+import ProjectCard from './ProjectCard';
 import NavBar from '../Navbar/NavBar';
-import Footer from '../Footer/Footer';
-import clientlogos2 from '../../images/assets/clientlogos2.png';
-import img1 from '../Work/images/img1.png';
-import img2 from '../Work/images/img2.png';
-import img3 from '../Work/images/img3.png';
-import img4 from '../Work/images/img4.png';
-import img5 from '../Work/images/img5.png';
-import img6 from '../Work/images/img6.png'
+import Footer from '../Footer/Footer'
+import flame from '../Work/images/img1.png'
+import isbr from '../Work/images/img2.png'
+import artvillage from '../Work/images/img3.png'
+import london from '../Work/images/img4.png'
+import vidyashilp from '../Work/images/img5.png'
+import emversity from '../Work/images/img6.png'
 
-// Changed img1 to img6 for variety
 
-import './page.css';
+const logos = [
+    { src: 'https://cdn.builder.io/api/v1/image/assets/8397598769884750a970fb52fe91672d/c21166eb95c00cc9ea08b2341f40426087f1ae883594e01c902147866dd3bfe7?apiKey=8397598769884750a970fb52fe91672d&', alt: 'Partner Logo 1' },
+    { src: 'https://cdn.builder.io/api/v1/image/assets/8397598769884750a970fb52fe91672d/d58cf5a1e873a347fd11668f81b0ffcad071f2ad4ea610d18e00386c8a4ee843?apiKey=8397598769884750a970fb52fe91672d&', alt: 'Partner Logo 2' },
+    { src: 'https://cdn.builder.io/api/v1/image/assets/8397598769884750a970fb52fe91672d/6f3369c8fd8ed6aa205108db308ee4f460e6f2cc39b42d05c0a89140792d1f28?apiKey=8397598769884750a970fb52fe91672d&', alt: 'Partner Logo 3' },
+    { src: 'https://cdn.builder.io/api/v1/image/assets/8397598769884750a970fb52fe91672d/3b21411e2d1a12e15454d2ee6e6bc9e27ff3827937152517ad6a41e084d493b6?apiKey=8397598769884750a970fb52fe91672d&', alt: 'Partner Logo 4' },
+    { src: 'https://cdn.builder.io/api/v1/image/assets/8397598769884750a970fb52fe91672d/12d6029ed981f818573d24fd7bd224f4c482d82b40109bae70b2685725f8fc28?apiKey=8397598769884750a970fb52fe91672d&', alt: 'Partner Logo 5' },
+    { src: 'https://cdn.builder.io/api/v1/image/assets/8397598769884750a970fb52fe91672d/4f04e2ac31bb670d73d169f758a53bd1d00fcf4426cb1b84daf2da841ddf1874?apiKey=8397598769884750a970fb52fe91672d&', alt: 'Partner Logo 6' },
+];
 
-const Page = () => {
-    const imageDetails = [
-        {
-            src: img1,
-            alt: 'Flame University',
-            // title: 'Flame University',
-            // description: 'Building India’s Pioneers in Liberal Education through a Decade of Partnership.'
-        },
-        {
-            src: img4,
-            alt: 'London Business School',
-            // title: 'London Business School',
-            // description: 'World-class education meets global knowledge with direct communication.'
-        },
-        {
-            src: img2,
-            alt: 'ISBR',
-            // title: 'ISBR',
-            // description: 'Building a student-centric immersive experience.'
-        },
-        {
-            src: img5,
-            alt: 'Vidyashilp University',
-            // title: 'Vidyashilp University',
-            // description: 'Creating an identity for a management institute in India.'
-        },
-        {
-            src: img3,
-            alt: 'Art Village',
-            // title: 'Art Village',
-            // description: 'Branding an artist collaborative retreat through sustainable architectural practices and eco stays.'
-        },
-        {
-            src: img6,
-            alt: 'Emversity',
-            // title: 'Emversity',
-            // description: 'Branding India’s leading institute in skill-based education.'
-        }
-    ];
+const projects = [
+    {
+        image: flame,
+        // title: 'Flame University',
+        // description: "Building India's Pioneers in Liberal Education through a Decade of Partnership",
+        imageAspectRatio: '0.88',
+        // dividerHeight: 116
+    },
+    {
+        image: london,
+        // title: 'London Business School',
+        // description: 'World-class education meets global leadership with direct communication.',
+        imageAspectRatio: '1.69',
+        // dividerHeight: 114
+    },
+    {
+        image: isbr,
+        // title: 'ISBR',
+        // description: 'Creating an identity for a management institute in India.',
+        imageAspectRatio: '1.71',
+        // dividerHeight: 64
+    },
+    {
+        image: vidyashilp,
+        // title: 'Vidyashilp University',
+        // description: 'Building a student centric immersive experience.',
+        imageAspectRatio: '1.47',
+        // dividerHeight: 80
+    },
+    {
+        image: artvillage,
+        // title: 'Art Village',
+        // description: 'Branding an artist collaborative space celebrating art architecture and nature through sustainable practises and eco stays.',
+        imageAspectRatio: '1.32',
+        // dividerHeight: 116
+    },
+    {
+        image: emversity,
+        // title: 'Emversity',
+        // description: "Branding India's leading institute in skill-based education",
+        imageAspectRatio: '0.8',
+        // dividerHeight: 62
+    }
+];
 
+export default function PortfolioSection() {
     return (
-        <div className="page-container">
-
+        <><section className={styles.portfolioSection}>
             <NavBar />
-            <div className="content">
-                <div className="layout">
-                    <section className="why-us">
-                        <div className="why-us-container" style={{ textAlign: 'center', marginTop: '2%' }}>
-                            <h2 className="why-us-title2">OUR WORK</h2>
-                            <div className="springboard-2"></div>
-                            <p className="why-us-text1" >
-                                Lorem ipsum dolor sit amet. Ut galisum corrupti qui magni officiis eos galisum sint eum dolor voluptatem quo laudantium deleniti. Non accusantium iste ea consequatur distinctio ut dolorem quis quo quia alias est maxime maxime.
-                            </p>
-                        </div>
-                        <div className="mt-8 bg-gray-100">
-                            <section data-aos="fade-up">
-                                <img src={clientlogos2} alt="clientlogos2" />
-                            </section>
-                        </div>
-                        <div className="image-gallery" data-aos="fade-right">
-                            {imageDetails.map((image, index) => (
-                                <div key={index} className="image-item">
-                                    <img src={image.src} alt={image.alt} />
-                                    <h3>{image.title}</h3>
-                                    <p>{image.description}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div className="see-more-container">
-                <a href="#more" className="see-more-link">See More</a>
-            </div>
-            <Footer />
-        </div>
-    );
-};
 
-export default Page;
+            <div className={styles.container}>
+                <div className={styles.header}>
+                    <div className={styles.titleWrapper}>
+                        <h2 className={styles.title}>OUR WORK</h2>
+                        <div className={styles.titleUnderline} />
+                    </div>
+                    <p className={styles.description}>
+                        Lorem ipsum dolor sit amet. Ut galisum corrupti qui magni officiis
+                        eos galisum sint eum dolor voluptatem quo laudantium deleniti. Non
+                        accusantium iste ea consequatur distinctio ut dolorem quis quo
+                        quia alias est maxime maxime.
+                    </p>
+                </div>
+
+                <div className={styles.logoGrid}>
+                    {logos.map((logo, index) => (
+                        <img
+                            key={index}
+                            src={logo.src}
+                            alt={logo.alt}
+                            className={styles.logo}
+                            loading="lazy" />
+                    ))}
+                </div>
+
+                <div className={styles.projectsGrid}>
+                    {projects.map((project, index) => (
+                        <ProjectCard
+                            key={index}
+                            {...project} />
+                    ))}
+                </div>
+
+                <button className={styles.seeMore}>See More</button>
+
+
+            </div>
+        </section><Footer /></>
+    );
+}

@@ -1,0 +1,61 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .projectImage {
+    aspect-ratio: var(--aspect-ratio);
+    object-fit: contain;
+    width: 100%;
+    border-radius: 0 0 70px 0;
+  }
+  
+  .projectInfo {
+    margin-top: 36px;
+    display: flex;
+    gap: 20px;
+    font-family: Lato, sans-serif;
+  }
+  
+  .projectTitle {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 30%;
+  }
+  
+  .descriptionWrapper {
+    display: flex;
+    gap: 19px;
+    color: rgb(125, 128, 128);
+    font: 400 24px Lato, sans-serif;
+    width: 70%;
+  }
+  
+  .divider {
+    width: 1px;
+    height: var(--divider-height);
+    border: 1px solid #000;
+  }
+  
+  .projectDescription {
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 991px) {
+    .projectInfo {
+      flex-direction: column;
+    }
+    
+    .projectTitle {
+      width: 100%;
+      margin-top: 40px;
+    }
+    
+    .descriptionWrapper {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }

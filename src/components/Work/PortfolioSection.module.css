@@ -1,0 +1,123 @@
+.portfolioSection {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 234px 80px 423px;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1660px;
+    flex-direction: column;
+  }
+  
+  .header {
+    display: flex;
+    gap: 40px 100px;
+    font-family: Lato, sans-serif;
+    flex-wrap: wrap;
+  }
+  
+  .titleWrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 65px;
+    color: rgb(0, 40, 85);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  .titleUnderline {
+    margin-top: 32px;
+    width: 89px;
+    height: 17px;
+    background-color: rgb(255, 127, 9);
+  }
+  
+  .description {
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    align-self: start;
+    flex-grow: 1;
+    width: 1022px;
+  }
+  
+  .logoGrid {
+    align-self: center;
+    display: flex;
+    margin-top: 86px;
+    width: 1215px;
+    max-width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    aspect-ratio: 1.33;
+    object-fit: contain;
+    width: 170px;
+  }
+  
+  .projectsGrid {
+    margin-top: 128px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .seeMore {
+    color: rgb(255, 127, 9);
+    text-align: center;
+    align-self: start;
+    margin-top: 62px;
+    margin-left: 46%;
+    font: 400 20px Lato, sans-serif;
+    margin-bottom:-20%;
+  }
+  
+  @media (max-width: 991px) {
+    .portfolioSection {
+      padding: 100px 20px;
+    }
+    
+    .container {
+      max-width: 100%;
+    }
+    
+    .header {
+      max-width: 100%;
+      margin-right: 6px;
+    }
+    
+    .titleWrapper {
+      font-size: 40px;
+    }
+    
+    .description {
+      max-width: 100%;
+    }
+    
+    .logoGrid {
+      margin-top: 40px;
+    }
+    
+    .projectsGrid {
+      grid-template-columns: 1fr;
+      margin-top: 40px;
+    }
+    
+    .seeMore {
+      margin-top: 40px;
+      
+    }
+  }
