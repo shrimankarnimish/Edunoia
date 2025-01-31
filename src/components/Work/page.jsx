@@ -80,7 +80,7 @@ export default function PortfolioSection() {
                         Lorem ipsum dolor sit amet. Ut galisum corrupti qui magni officiis
                         eos galisum sint eum dolor voluptatem quo laudantium deleniti. Non
                         accusantium iste ea consequatur distinctio ut dolorem quis quo
-                        quia alias est maxime maxime.
+                        quia alias est<br></br> maxime maxime.
                     </p>
                 </div>
 

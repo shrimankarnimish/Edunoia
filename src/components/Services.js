@@ -14,7 +14,8 @@ const Clients = () => {
         <section data-aos="fade-up">
       <img src ={clientlogos} alt='' ></img>
         </section>
-        <br></br><br></br><br></br><br></br>     
+        <div style={{backgroundColor:'white'}}> <br></br><br></br><br></br><br></br>  </div>
+          
       </div>
       
     )
