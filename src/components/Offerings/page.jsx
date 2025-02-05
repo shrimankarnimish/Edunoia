@@ -88,7 +88,7 @@ export function OfferingsPage() {
         <NavBar />
       </div>
       <div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </main>
   );

@@ -19,7 +19,7 @@ import Offerings from './components/Offerings/page'
 import Impression from './components/Impression/page'
 import Spotlight from './components/Spotlight/page'
 // import NavBar from './components/Navbar/NavBar';
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -58,7 +58,7 @@ function App() {
 
             </Routes>
           </ScrollToTop>
-          {/* <Footer/> */}
+          <Footer/>
         
       </Router>
     </>

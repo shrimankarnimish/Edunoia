@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './PortfolioSection.module.css'
 import ProjectCard from './ProjectCard';
 import NavBar from '../Navbar/NavBar';
-import Footer from '../Footer/Footer'
 import flame from '../Work/images/img1.png'
 import isbr from '../Work/images/img2.png'
 import artvillage from '../Work/images/img3.png'
@@ -107,6 +106,6 @@ export default function PortfolioSection() {
 
 
             </div>
-        </section><Footer /></>
+        </section></>
     );
 }

@@ -1,0 +1,215 @@
+.spotlight {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 252px 80px 497px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1667px;
+  }
+  
+  .blogHeader,
+  .newsHeader {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 64px;
+  }
+  
+  .titleWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sectionTitle {
+    color: #002855;
+    font: 700 65px/1 Lato, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .titleUnderline {
+    margin-top: 37px;
+    width: 89px;
+    height: 0;
+    border-top: 17px solid #FF7F09;
+  }
+  
+  .sectionDescription {
+    color: #000;
+    font: 300 20px Lato, sans-serif;
+    max-width: 66%;
+    margin: 0;
+  }
+  
+  .blogGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 108px;
+  }
+  
+  .newsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 143px;
+  }
+  
+  .blogCard,
+  .newsCard {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blogImage,
+  .newsImage {
+    width: 100%;
+    aspect-ratio: 1.47;
+    object-fit: contain;
+  }
+  
+  .blogTitle {
+    color: #002855;
+    font: 400 24px/28px Lato, sans-serif;
+    margin: 23px 0 16px;
+  }
+  
+  .blogDescription,
+  .newsDescription {
+    color: #000;
+    font: 300 16px Lato, sans-serif;
+    margin: 0;
+  }
+  
+  .readMoreButton {
+    color: #FF7F09;
+    font: 400 20px Lato, sans-serif;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .newsTitle {
+    color: #002855;
+    font: 700 24px/28px Lato, sans-serif;
+    margin: 16px 0 0;
+  }
+  
+  .eduRecs {
+    display: grid;
+    grid-template-columns: 29% 71%;
+    gap: 20px;
+  }
+  
+  .eduRecsContent {
+    background: #F5F5F5;
+    padding: 43px 35px 73px;
+  }
+  
+  .eduRecsHeader {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .eduTitle {
+    background: #002855;
+    color: #fff;
+    padding: 31px 41px;
+    font: 400 48px/43px "Playfair Display", serif;
+  }
+  
+  .recsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .recsTitle {
+    color: #002855;
+    font: 700 48px/1 Lato, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .editorsChoice {
+    color: #FF7F09;
+    font: 20px/1.1 "Figma Hand", sans-serif;
+    margin-top: 12px;
+  }
+  
+  .podcastTitle {
+    color: #002855;
+    font: 400 36px/35px Lato, sans-serif;
+    margin: 34px 0;
+  }
+  
+  .podcastDescription {
+    color: #002855;
+    font: 300 16px Lato, sans-serif;
+    margin: 0 0 21px;
+  }
+  
+  .pastRecsButton {
+    color: #002855;
+    font: 400 20px Lato, sans-serif;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .eduRecsImage {
+    width: 100%;
+    aspect-ratio: 2.19;
+    object-fit: contain;
+    border-radius: 0 0 49px 0;
+  }
+  
+  @media (max-width: 991px) {
+    .spotlight {
+      padding: 130px 20px;
+    }
+  
+    .blogHeader,
+    .newsHeader {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .sectionTitle {
+      font-size: 40px;
+    }
+  
+    .blogGrid {
+      grid-template-columns: 1fr;
+      margin-bottom: 40px;
+    }
+  
+    .newsGrid {
+      grid-template-columns: 1fr;
+      margin-bottom: 40px;
+    }
+  
+    .eduRecs {
+      grid-template-columns: 1fr;
+    }
+  
+    .eduTitle {
+      font-size: 40px;
+      line-height: 40px;
+      padding: 20px;
+    }
+  
+    .eduRecsContent {
+      padding: 20px;
+    }
+  }
+  
