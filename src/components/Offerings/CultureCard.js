@@ -17,3 +17,4 @@ export function CultureCard({ image, imageAlt, title }) {
     </div>
   );
 }
+export default CultureCard;

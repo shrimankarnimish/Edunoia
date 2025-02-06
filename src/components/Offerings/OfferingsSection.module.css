@@ -1,0 +1,158 @@
+.offeringsSection {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 230px 80px 585px;
+  }
+  
+  .container {
+    align-self: center;
+    width: 100%;
+    max-width: 1649px;
+  }
+  
+  .header {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .titleWrapper {
+    width: 22%;
+  }
+  
+  .title {
+    color: rgb(0, 40, 85);
+    text-transform: uppercase;
+    font: 700 65px/58px Lato, sans-serif;
+   
+  }
+  
+  .titleUnderline {
+  width: 89px;
+  height: 16px;
+  margin-top: 39px;
+  background-color: #ff7f09;
+  
+  }
+  
+  .description {
+    width: 67%;
+    color: #000;
+    font: 300 24px Lato, sans-serif;
+    margin-left: 10%;
+  }
+  
+  .sectionTitle {
+    color: #000;
+    align-self: start;
+    margin-top: 65px;
+    font: 700 48px/1.1 Lato, sans-serif;
+  }
+  
+  .imageGrid {
+    align-self: center;
+    margin-top: 52px;
+    width: 100%;
+    max-width: 1653px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .imageWrapper {
+    width: 25%;
+  }
+  
+  .gridImage {
+    aspect-ratio: 0.76;
+    object-fit: contain;
+    width: 396px;
+    max-width: 100%;
+  }
+  
+  .cultureCards {
+    display: flex;
+    gap: 20px;
+    margin-top: 52px;
+  }
+  
+  .card {
+    border-radius: 0 0 49px 0;
+    background: #f5f5f5;
+    padding-bottom: 54px;
+    width: 33%;
+  }
+  
+  .cardImage {
+    width: 100%;
+    aspect-ratio: 1.57;
+    object-fit: contain;
+  }
+  
+  .cardTitle {
+    margin: 60px 0 0 61px;
+    font: 700 32px/35px Lato, sans-serif;
+    color: #000;
+  }
+  
+  @media (max-width: 991px) {
+    .offeringsSection {
+      padding: 100px 20px;
+    }
+    
+    .container {
+      max-width: 100%;
+    }
+    
+    .header {
+      flex-direction: column;
+      gap: 0;
+    }
+    
+    .titleWrapper {
+      width: 100%;
+    }
+    
+    .title {
+      margin-top: 40px;
+      font-size: 40px;
+      line-height: 39px;
+    }
+    
+    .description {
+      width: 100%;
+      margin-top: 40px;
+    }
+    
+    .sectionTitle {
+      margin-top: 40px;
+      font-size: 40px;
+    }
+    
+    .imageGrid {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    
+    .imageWrapper {
+      width: 100%;
+    }
+    
+    .gridImage {
+      margin-top: 24px;
+    }
+    
+    .cultureCards {
+      flex-direction: column;
+      
+    }
+    
+    .card {
+      width: 100%;
+      margin-top: 21px;
+    }
+    
+    .cardTitle {
+      margin: 40px 0 0 10px;
+    }
+  }

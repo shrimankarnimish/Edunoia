@@ -1,15 +1,16 @@
 import React from 'react';
+import styles from './OfferingsSection.module.css';
 
-export function ImageGrid({ images, className }) {
+export default function ImageGrid({ images }) {
   return (
-    <div className="flex gap-5 max-md:flex-col">
-      {images.map((image) => (
-        <div key={image.id} className={`flex flex-col ${className || 'w-3/12'} max-md:ml-0 max-md:w-full`}>
+    <div className={styles.imageGrid}>
+      {images.map((image, index) => (
+        <div key={index} className={styles.imageWrapper}>
           <img
-            loading="lazy"
             src={image.src}
             alt={image.alt}
-            className="object-contain grow shrink-0 max-w-full aspect-[0.76] w-[396px] max-md:mt-6 hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            className={styles.gridImage}
           />
         </div>
       ))}

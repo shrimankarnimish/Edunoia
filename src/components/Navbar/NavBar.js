@@ -16,7 +16,11 @@ const NavBar = () => {
     };
 
     const handleScroll = () => {
-        setScrolled(window.scrollY > 50); // Set a threshold for the background color change
+        if (location.pathname !== '/culture') {
+            setScrolled(window.scrollY > 50); // Set a threshold for the background color change
+        } else {
+            setScrolled(false); // Ensure navbar remains default on the Culture page
+        }
     };
 
     useEffect(() => {
@@ -24,7 +28,7 @@ const NavBar = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [location]);
 
     const isHomePage = location.pathname === '/';
 

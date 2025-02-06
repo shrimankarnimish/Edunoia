@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .box {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .advisory {
+    background-color: #f58220;
+  }
+  
+  .workshops {
+    background-color: #002147;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: #ffcc00;
+  }
+  
+  ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
