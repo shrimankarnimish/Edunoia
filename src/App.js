@@ -20,6 +20,7 @@ import Impression from './components/Impression/page'
 import Spotlight from './components/Spotlight/page'
 // import NavBar from './components/Navbar/NavBar';
 import Footer from './components/Footer/Footer';
+import Culture from './components/Culture/page'
 
 
 
@@ -55,6 +56,8 @@ function App() {
               <Route path="/offerings" element={<Offerings />} />
               <Route path="/impressions" element={<Impression />} />
               <Route path="/spotlight" element={<Spotlight/>}/>
+              <Route path="/culture" element={<Culture/>}/>
+
 
             </Routes>
           </ScrollToTop>

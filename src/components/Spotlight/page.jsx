@@ -3,13 +3,13 @@ import { BlogCard } from './BlogCard';
 import { NewsCard } from './NewsCard';
 import styles from './Blog.module.css';
 import NavBar from '../Navbar/NavBar';
-import img1 from '../Spotlight/images/img1.png'
-import img2 from '../Spotlight/images/img2.png'
-import img3 from '../Spotlight/images/img3.png'
-import img4 from '../Spotlight/images/img4.png'
-import img5 from '../Spotlight/images/img5.png'
-import img6 from '../Spotlight/images/img6.png'
-import img7 from '../Spotlight/images/img7.png'
+import img1 from '../Spotlight/images/img1.png';
+import img2 from '../Spotlight/images/img2.png';
+import img3 from '../Spotlight/images/img3.png';
+import img4 from '../Spotlight/images/img4.png';
+import img5 from '../Spotlight/images/img5.png';
+import img6 from '../Spotlight/images/img6.png';
+import img7 from '../Spotlight/images/img7.png';
 
 
 
@@ -64,7 +64,8 @@ export const BlogSection = () => {
             <div className={styles.titleUnderline} />
           </div>
           <p className={styles.sectionDescription}>
-            Lorem ipsum dolor sit amet. Ut galisum corrupti qui magni officiis eos galisum sint eum dolor voluptatem quo laudantium deleniti. Non accusantium iste ea consequatur distinctio ut dolorem quis quo quia alias est maxime maxime.
+            Lorem ipsum dolor sit amet. Ut galisum corrupti qui magni officiis eos galisum sint eum dolor voluptatem quo laudantium deleniti. 
+            Non accusantium iste ea consequatur distinctio ut dolorem quis quo quia alias est maxime maxime.
           </p>
         </div>
 

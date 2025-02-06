@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBar from '../Navbar/NavBar';
-import Footer from '../Footer/Footer';
 import banner from '../Impression/images/Impression.png';
 import './impression.css';
 import Testimonials from './testimonicals';

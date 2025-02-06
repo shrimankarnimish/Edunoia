@@ -4,7 +4,7 @@
     flex-direction: column;
     overflow: hidden;
     align-items: center;
-    padding: 252px 80px 497px;
+    padding: 252px 80px 49px;  
   }
   
   .container {
@@ -111,7 +111,7 @@
   }
   
   .eduRecsContent {
-    background: #F5F5F5;
+    background: #ffffff;
     padding: 43px 35px 73px;
   }
   

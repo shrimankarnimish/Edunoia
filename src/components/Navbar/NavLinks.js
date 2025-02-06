@@ -36,8 +36,8 @@ const NavLinks = () => {
                 SPOTLIGHT
             </HashLink>
             <HashLink
-                className={`nav-link ${isActive('/contact#culture') ? 'active' : ''}`}
-                to="/contact#culture"
+                className={`nav-link ${isActive('/culture') ? 'active' : ''}`}
+                to="/culture"
             >
                 CULTURE
             </HashLink>

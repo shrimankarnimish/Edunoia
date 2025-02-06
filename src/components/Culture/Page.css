@@ -1,0 +1,26 @@
+/* Background container */
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .background {
+      background-size: contain;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
