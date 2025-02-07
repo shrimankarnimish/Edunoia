@@ -71,15 +71,13 @@ export const TeamSection = () => {
       </div>
       <div className={styles.membersGrid}>
         {teamMembers.map((member, index) => (
-          <TeamMember
-           
-          
-       
-            image={member.image}
+          <TeamMember  image={member.image}
              />
         ))}
       </div>
-    </section><NavBar /></>
+    </section>
+    <NavBar />
+    </>
   );
 };
 export default TeamSection;

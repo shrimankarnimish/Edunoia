@@ -69,7 +69,7 @@ export default function PortfolioSection() {
         <><section className={styles.portfolioSection}>
             <NavBar />
 
-            <div className={styles.container}>
+            <div className={styles.container} data-aos="fade-up">
                 <div className={styles.header}>
                     <div className={styles.titleWrapper}>
                         <h2 className={styles.title}>OUR WORK</h2>

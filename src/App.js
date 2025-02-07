@@ -20,7 +20,8 @@ import Impression from './components/Impression/page'
 import Spotlight from './components/Spotlight/page'
 // import NavBar from './components/Navbar/NavBar';
 import Footer from './components/Footer/Footer';
-import Culture from './components/Culture/page'
+import Culture from './components/Culture/page';
+import Connect from './components/Connect/page';
 
 
 
@@ -33,6 +34,7 @@ function App() {
         easing: 'ease-out-cubic',
       });
     }
+    
 
     window.addEventListener('load', () => {
       aos_init();
@@ -57,6 +59,8 @@ function App() {
               <Route path="/impressions" element={<Impression />} />
               <Route path="/spotlight" element={<Spotlight/>}/>
               <Route path="/culture" element={<Culture/>}/>
+              <Route path="/connect" element={<Connect/>}/>
+              
 
 
             </Routes>

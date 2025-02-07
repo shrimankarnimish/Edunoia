@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Footer.module.css';
 import LogoWhite from '../../images/Logo.png';
 
-// isActive: true 
 const navItems = [
   { label: 'OFFERING', path: '/offerings' },
   { label: 'WORK', path: '/work' },
@@ -22,20 +21,19 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    
     <footer className={styles.footerContainer}>
-        
       <div className={styles.footerContent}>
-      {/* <div className={styles.logoContainer}>
-      <img 
-        src={LogoWhite} 
-        alt="Edunoia Logo" 
-        className={styles.logo}
-      />
-    </div> */}
+        
+        {/* Logo Section */}
+        <div className={styles.logoContainer}>
+          <img 
+            src={LogoWhite} 
+            alt="Edunoia Logo" 
+            className={styles.logo}
+          />
+        </div>
         
         <div className={styles.footerWrapper}>
-        
           <p className={styles.description}>
             Edunoia is a consultancy offering advisor, brand thinking and
             communication strategies to a broad cross-section of the
@@ -44,11 +42,11 @@ export default function Footer() {
           
           <div className={styles.navigationContainer}>
             <nav className={styles.navLinks}>
-              {navItems.map(({ label, path, isActive }) => (
+              {navItems.map(({ label, path }) => (
                 <a
                   key={path}
                   href={path}
-                  className={`${styles.navLink} ${isActive ? styles.activeLink : ''}`}
+                  className={styles.navLink}
                 >
                   {label}
                 </a>
@@ -78,7 +76,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-    
     </footer>
   );
 }

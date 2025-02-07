@@ -42,8 +42,8 @@ const NavLinks = () => {
                 CULTURE
             </HashLink>
             <HashLink
-                className={`nav-link ${isActive('/contact#connect') ? 'active' : ''}`}
-                to="/contact#connect"
+                className={`nav-link ${isActive('/connect') ? 'active' : ''}`}
+                to="/connect"
             >
                 CONNECT
             </HashLink>

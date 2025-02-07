@@ -1,7 +1,7 @@
 .teamSection {
   background-color: rgb(255, 255, 255);
   display: flex;
-  padding-bottom: 500px;
+  padding-bottom: 50px; /* Reduced from 500px */
   flex-direction: column;
   overflow: hidden;
   align-items: center;
@@ -58,6 +58,7 @@
   width: 100%;
   max-width: 1582px;
   margin-top: 36px;
+  margin-bottom: 0; /* Ensure no extra space */
 }
 
 @media (max-width: 991px) {
