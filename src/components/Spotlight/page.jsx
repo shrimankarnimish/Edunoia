@@ -10,6 +10,9 @@ import img4 from '../Spotlight/images/img4.png';
 import img5 from '../Spotlight/images/img5.png';
 import img6 from '../Spotlight/images/img6.png';
 import img7 from '../Spotlight/images/img7.png';
+import { Fadeinup } from '../Animations';
+
+
 
 
 
@@ -38,7 +41,7 @@ const newsData = [
     description: "The surge in forging techniques has reached a point where distinguishing between traditionally awarded degrees and meticulously crafted duplicates is nearly impossible."
   },
   {
-    image:img5,
+    image: img5,
     title: "Purpose Summit Updates",
     description: "The surge in forging techniques has reached a point where distinguishing between traditionally awarded degrees and meticulously crafted duplicates is nearly impossible."
   },
@@ -58,49 +61,57 @@ export const BlogSection = () => {
   return (
     <section className={styles.spotlight}>
       <div className={styles.container}>
-        <div className={styles.blogHeader}>
-          <div className={styles.titleWrapper}>
-            <h2 className={styles.sectionTitle}>BLOGS</h2>
-            <div className={styles.titleUnderline} />
+        <Fadeinup>
+          <div className={styles.blogHeader}>
+            <div className={styles.titleWrapper}>
+              <h2 className={styles.sectionTitle}>BLOGS</h2>
+              <div className={styles.titleUnderline} />
+            </div>
+            <p className={styles.sectionDescription}>
+              Lorem ipsum dolor sit amet. Ut galisum corrupti qui magni officiis eos galisum sint eum dolor voluptatem quo laudantium deleniti.
+              Non accusantium iste ea consequatur distinctio ut dolorem quis quo quia alias est maxime maxime.
+            </p>
           </div>
-          <p className={styles.sectionDescription}>
-            Lorem ipsum dolor sit amet. Ut galisum corrupti qui magni officiis eos galisum sint eum dolor voluptatem quo laudantium deleniti. 
-            Non accusantium iste ea consequatur distinctio ut dolorem quis quo quia alias est maxime maxime.
-          </p>
-        </div>
+        </Fadeinup>
+        <Fadeinup>
+          <div className={styles.blogGrid}>
+            {blogData.map((blog, index) => (
+              <BlogCard
+                key={index}
+                image={blog.image}
+                title={blog.title}
+                description={blog.description}
+                onReadMore={() => { }}
+              />
+            ))}
+          </div>
+        </Fadeinup>
 
-        <div className={styles.blogGrid}>
-          {blogData.map((blog, index) => (
-            <BlogCard
-              key={index}
-              image={blog.image}
-              title={blog.title}
-              description={blog.description}
-              onReadMore={() => {}}
-            />
-          ))}
-        </div>
 
         <div className={styles.newsHeader}>
-          <div className={styles.titleWrapper}>
-            <h2 className={styles.sectionTitle}>NEWS</h2>
-            <div className={styles.titleUnderline} />
-          </div>
-          <p className={styles.sectionDescription}>
-            Lorem ipsum dolor sit amet. Ut galisum corrupti qui magni officiis eos galisum sint eum dolor voluptatem quo laudantium deleniti. Non accusantium iste ea consequatur distinctio ut dolorem quis quo quia alias est maxime maxime.
-          </p>
+          <Fadeinup>
+            <div className={styles.titleWrapper}>
+              <h2 className={styles.sectionTitle}>NEWS</h2>
+              <div className={styles.titleUnderline} />
+            </div>
+            <p className={styles.sectionDescription}>
+              Lorem ipsum dolor sit amet. Ut galisum corrupti qui magni officiis eos galisum sint eum dolor voluptatem quo laudantium deleniti. Non accusantium iste ea consequatur distinctio ut dolorem quis quo quia alias est maxime maxime.
+            </p>
+          </Fadeinup>
         </div>
 
-        <div className={styles.newsGrid}>
-          {newsData.map((news, index) => (
-            <NewsCard
-              key={index}
-              image={news.image}
-              title={news.title}
-              description={news.description}
-            />
-          ))}
-        </div>
+        <Fadeinup>
+          <div className={styles.newsGrid}>
+            {newsData.map((news, index) => (
+              <NewsCard
+                key={index}
+                image={news.image}
+                title={news.title}
+                description={news.description}
+              />
+            ))}
+          </div>
+        </Fadeinup>
 
         <div className={styles.eduRecs}>
           <div className={styles.eduRecsContent}>
@@ -129,7 +140,7 @@ export const BlogSection = () => {
           />
         </div>
       </div>
-      <NavBar/>
+      <NavBar />
     </section>
   );
 };

@@ -24,8 +24,13 @@ import Culture from './components/Culture/page';
 import Connect from './components/Connect/page';
 
 
-
 function App() {
+  useEffect(() => {
+    if (navigator.userAgent.includes("Macintosh")) {
+      document.body.style.zoom = "80%";
+    }
+  }, []);
+
   useEffect(() => {
     const aos_init = () => {
       AOS.init({
@@ -35,7 +40,6 @@ function App() {
       });
     }
     
-
     window.addEventListener('load', () => {
       aos_init();
     });
@@ -47,7 +51,7 @@ function App() {
     <>
       <Router>
         {/* <FloatingButton/> */}
-     
+       
           {/* <NavBar/> */}
           <ScrollToTop>
             <Routes>
@@ -60,9 +64,6 @@ function App() {
               <Route path="/spotlight" element={<Spotlight/>}/>
               <Route path="/culture" element={<Culture/>}/>
               <Route path="/connect" element={<Connect/>}/>
-              
-
-
             </Routes>
           </ScrollToTop>
           <Footer/>
@@ -72,5 +73,6 @@ function App() {
   );
 }
 
-
 export default App;
+
+

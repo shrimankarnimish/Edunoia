@@ -143,3 +143,31 @@
     }
 }
 
+.navbar-logo img {
+    width: 100%; /* Default size for larger screens */
+    height: auto;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+    .navbar-logo img {
+        width: 140px;  /* Scale down on tablets */
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .navbar-logo img {
+        width: 120px;  /* Reduce size further */
+    }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+    .navbar-logo img {
+        width: 100px;  /* Compact size for smallest screens */
+    }
+}
+
+

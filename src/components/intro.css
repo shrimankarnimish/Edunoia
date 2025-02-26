@@ -1,80 +1,44 @@
 /* Container for the 'about' section */
 .about-container {
-    background-color: #002855; /* Background color */
-    width: 100%; /* Full width */
-    height: auto; /* Adjust height dynamically */
-    display: flex; /* Flexbox for centering */
-    align-items: center; /* Vertical centering */
-    justify-content: center; /* Horizontal centering */
-    padding: 7rem; /* Space around the content */
+    background-color: #002855;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 2rem;
 }
 
 /* Container for the heading */
 .intro-container {
-    text-align: center; /* Center-align text */
-}
-
-.flex-col-reverse {
-    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 900px; /* Ensures proper alignment */
+    margin: 0 auto;
 }
 
 /* Styling for the heading */
 .intro-heading {
-    font-size: 2rem; /* Default font size */
-    line-height: 1.4; /* Line height for readability */
-    color: #ffffff; /* Default text color */
-    font-family: 'Lato', sans-serif; /* Apply Lato font */
-    margin: auto; /* Center the heading container */
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
-/* Highlighted text (Edunoia is an advisory) */
-
-
-/* Normal text for other lines */
-
-/* Responsive adjustments */
-@media (min-width: 768px) {
-    .intro-heading {
-        font-size: 3rem; /* Larger font size for bigger screens */
-    }
-}
-
-/* Normal styling for the highlighted text */
+/* Highlighted text */
 .highlight {
-    color: #ffffff; /* White color for highlighted words */
-    font-family: 'Open Sans', sans-serif; /* Open Sans font */
-    font-weight: 700; /* Bold */
-    font-size: 45px; /* Match the font size */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: color 0.3s ease;
 }
 
-/* Hover effect for the highlighted text */
 .highlight:hover {
-    color: #ff7f09; /* Change color to #ff7f09 on hover */
+    color: #ff7f09;
 }
 
-.hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; /* Adjust height as needed */
-    padding: 2rem;
-    margin: auto;
-    overflow: hidden; /* Ensures no overflow issues during animation */
-    animation: zoom-in 1s ease-in-out; /* Apply the zoom-in animation */
-}
-
-/* Keyframes for zoom-in animation */
-@keyframes zoom-in {
-    0% {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
+/* Springboard styling */
 .springboard {
     width: 10%; /* Set an explicit width */
     height: 20px; /* Set an explicit height to match the ratio */
@@ -83,9 +47,50 @@
     padding-left: 14%;
     margin-inline: auto;
 }
-  
-  :root {
+:root {
     --blackcolor: rgb(236, 229, 229);
+}
 
-  }
-  
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .about-container {
+        padding: 5rem 1.5rem;
+    }
+
+    .intro-heading {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 4rem 1rem;
+    }
+
+    .intro-heading {
+        font-size: 1.5rem;
+    }
+
+    .highlight {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 3rem 1rem;
+    }
+
+    .intro-heading {
+        font-size: 1.3rem;
+    }
+
+    .highlight {
+        font-size: 1.4rem;
+    }
+
+    .springboard {
+        width: 40px;
+        height: 4px;
+    }
+}
